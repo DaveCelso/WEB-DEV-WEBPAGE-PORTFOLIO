@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Portfolio</title>
+
+        <!-- FONT AWESOME ICONS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <style>
+        /* SMOOTH SCROLL */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: black;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: gray;
+            margin: 0 25px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a i {
+            margin-right: 6px;
+        }
+
+        nav a:hover {
+            color: white;
+            transform: scale(1.1);
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 80px 60px;
+            min-height: 400px;
+            animation: fadein 1s;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        /* HOME */
+        .home-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .profile-left img {
+            width: 220px;
+            border-radius: 15px;
+            border: 3px solid black;
+            transition: 0.3s;
+        }
+
+        .profile-left img:hover {
+            transform: scale(1.05);
+        }
+
+        .profile-right {
+            max-width: 500px;
+        }
+
+        /* ABOUT */
+        .about-container {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .achievements {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        ul li {
+            margin: 8px 0;
+        }
+
+        /* FOOTER */
+        footer {
+            background: black;
+            color: gray;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* ANIMATION */
+        @keyframes fadein {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- NAVBAR -->
+        <nav>
+            <a href="#home"><i class="fa-solid fa-house"></i>Home</a>
+            <a href="#contact"><i class="fa-solid fa-envelope"></i>Contact</a>
+            <a href="#about"><i class="fa-solid fa-user"></i>About</a>
+            <a href="#skills"><i class="fa-solid fa-code"></i>Skills</a>
+        </nav>
+
+        <!-- HOME -->
+        <section id="home">
+            <h2>HOME</h2>
+            <div class="home-container">
+                <div class="profile-left">
+                    <h3>Profile</h3>
+                    <img src="Media/myphoto.jpg" alt="My Photo">
+                </div>
+                <div class="profile-right">
+                    <p><b>Name:</b> Dave Celso L. Calunsag</p>
+                    <p><b>Course:</b> Bachelor of Science in Information Technology</p>
+                    <p><b>Year Level:</b> 1st Year</p>
+                    <p><b>Section:</b> BSIT 1B</p>
+
+                    <p>
+                    Hello! My name is Dave and I am currently studying Information Technology.
+                    I enjoy learning programming, web development, and exploring new technologies.
+                    This portfolio website shows my personal profile, achievements, contact information,
+                    and skills as an IT student.
+                    </p>
+
+                    <p><i>"The best way to learn programming is by practicing every day."</i></p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <h2>CONTACT</h2>
+            <p>You can reach me through the following platforms:</p>
+            <p><i class="fa-solid fa-envelope"></i> Gmail: davecelso1208@gmail.com</p>
+            <p><i class="fa-brands fa-facebook"></i> Facebook: <a href="https://www.facebook.com/davecelso.calunsag.5" target="_blank">fb.com/davecelso.calunsag.5</a></p>
+            <p><i class="fa-brands fa-instagram"></i> Instagram: <a href="https://www.instagram.com/davenation_ph/" target="_blank">@davenation_ph</a></p>
+            <p>
+                Feel free to contact me if you want to collaborate, ask questions,
+                or learn more about my projects and experiences.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <h2>ABOUT</h2>
+            <div class="about-container">
+                <div class="achievements">
+                    <h3>Achievements</h3>
+                    <ul>
+                        <li>Completed Web Development Activities</li>
+                        <li>Created HTML and CSS Projects</li>
+                        <li>Participated in School ICT Activities</li>
+                        <li>Learning Programming Languages</li>
+                    </ul>
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>Playing online games</li>
+                        <li>Watching technology videos</li>
+                        <li>Learning programming</li>
+                        <li>Exploring new technology</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>
+                    This webpage is my personal portfolio created using HTML and CSS.
+                    It demonstrates my knowledge in web development and basic website design.
+                    </p>
+                    <p>
+                    My goal is to become a professional software developer and improve my
+                    skills in programming, web development, and other IT related technologies.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- SKILLS -->
+        <section id="skills">
+            <h2>SKILLS</h2>
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Basic C# Programming</li>
+                <li>Computer Troubleshooting</li>
+                <li>Basic Web Design</li>
+            </ul>
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Problem Solving</li>
+                <li>Teamwork</li>
+                <li>Communication</li>
+                <li>Time Management</li>
+            </ul>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            © 2026 Portfolio | @calunsag
+        </footer>
+
+    </body>
+</html>
